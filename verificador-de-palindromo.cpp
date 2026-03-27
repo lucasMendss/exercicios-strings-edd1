@@ -8,13 +8,13 @@ void isPalindrome(string word)
 {
 	cout << " " << endl;
 	
-	// deixando todas as letras minúsculas
+	// deixando todas as letras minÃºsculas
 	string wordToLower = "";
 	for(char c : word){
 		wordToLower += tolower(c);	
 	}
 	
-	// removendo espaços
+	// removendo espaÃ§os
 	char charToRemove = ' ';
 	wordToLower.erase(remove(wordToLower.begin(), wordToLower.end(), charToRemove), wordToLower.end());
 	
@@ -30,10 +30,10 @@ void isPalindrome(string word)
 	cout << "Palavra: " << wordToLower << endl;
 	cout << "Palavra invertida: " << reversedWord << endl;
 	if (wordToLower.compare(reversedWord) == 0){
-		cout << "É um palíndromo" << endl;
+		cout << "Ã‰ um palÃ­ndromo" << endl;
 	}
 	else{
-		cout << "Não é um palíndromo" << endl;
+		cout << "NÃ£o Ã© um palÃ­ndromo" << endl;
 	}
 }
 
@@ -42,7 +42,7 @@ int main(int argc, char** argv)
 	setlocale(LC_ALL, "");
 	string word = "";
 	cout << "Digite uma palavra: ";
-	cin  >> word;
+	getline(cin, word);
 	
 	isPalindrome(word);
 	return 0;
